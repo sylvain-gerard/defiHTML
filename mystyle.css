@@ -1,6 +1,4 @@
 
-
-
 footer{
         position: relatived;
         bottom: 0;
@@ -17,18 +15,8 @@ footer{
 /* TAILLE DU CAROUSEL */
 .carousel-item {
     width: 400px !important;
-
 }
-
-
-/* enlever le bandeau sur petit ecran */
-@media screen and (max-width: 320px) {
-    nav img{
-      height: 56px;
-    }
-      
-}
-    
+  
 
 /* bouton social footer */
   a.mt-share-inline-circle-sm img {
@@ -73,29 +61,25 @@ footer{
   .mt-pinterest {
     background-color: rgb(204, 33, 39);
   }
+  /* pour fuixer la taille de la nav */
+  nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons, nav img {
+      height: 56px;
+      line-height: 56px;
+  }
 
-  nav {
-    height: 56px;
-    line-height: 56px;
-}
-/* pour fuixer la taille de la nav */
-nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons, nav img {
-    height: 56px;
-    line-height: 56px;
-}
+  nav .button-collapse i {
+      height: 56px;
+      line-height: 56px;
+  }
 
-nav .button-collapse i {
-    height: 56px;
-    line-height: 56px;
-}
+  nav .brand-logo {
+      font-size: 1.6rem;
+  }
 
-nav .brand-logo { 
-    font-size: 1.6rem; 
-}
 
-@media only screen and (min-width: 601px){
-    nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
-        height: 56px;
-        line-height: 56px;
-    }
-}
+  @media only screen and (min-width: 601px){
+      nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+          height: 56px;
+          line-height: 56px;
+      }
+  }

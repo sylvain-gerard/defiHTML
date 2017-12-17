@@ -13,8 +13,8 @@
 
     <!-- Mes CSS -->
     <link href="mystyle.css" type="text/css" rel="stylesheet">
-    <!-- Srcipt estimation -->
-    <script type="text/javascript" src="js/estimation.js"></script>
+    <!-- Script Validation du formulaire -->
+    <script type="text/javascript" src="js/checkForm.js"></script>
 </head>
 
 <body>
@@ -70,20 +70,20 @@
                     </div>
                     <div class="input-field col s12 m6">
                         <i class="material-icons prefix">account_circle</i>
-                        <input id="last_name" type="text" class="validate" name="prenom">
-                        <label for="last_name">Prénom</label>
+                        <input value="Sylvain" id="last_name" type="text" class="validate" name="prenom">
+                        <label class="active" for="last_name">Prénom</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s12 m6">
                         <i class="material-icons prefix">email</i>
-                        <input id="email" type="email" class="validate" name="mail">
-                        <label for="email">Email</label>
+                        <input value="twentysyl@gmail.com" id="email" type="email" class="validate" name="mail">
+                        <label class="active" for="email">Email</label>
                     </div>
                     <div class="input-field col s12 m6">
                         <i class="material-icons prefix">phone</i>
-                        <input id="phone" type="text" class="validate" name="phone">
-                        <label for="phone">Téléphone</label>
+                        <input value="+1 99 88 77 66 55" id="phone" type="text" class="validate" name="phone">
+                        <label class="active" for="phone">Téléphone</label>
                     </div>
                 </div>
                 <div class="row">
@@ -139,11 +139,11 @@
                 </div>
                 <div class="row">
                     <div class="col s6">
-                        <button class="btn waves-effect waves-light real" type="submit" onclick="estimate()">Estimation
+                        <button class="btn waves-effect waves-light real" type="submit" onclick="checkForm()">Estimation
                               <i class = "material-icons right">send</i></button>
                     </div>
                     <div class="col s6">
-                        <button class="btn waves-effect waves-light real" type="submit" onclick="checkForm()">Envoi
+                        <button class="btn waves-effect waves-light real" onclick="checkForm()">Envoi
                           <i class = "material-icons right">send</i></button>
                     </div>
                 </div>

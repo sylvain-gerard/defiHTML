@@ -1,4 +1,4 @@
-function checkForm() {
+function estimate() {
 
     // VERIFICATION DU REMPLISSAGE DES CHAMPS
     if (document.forms[0].nom.value == "") {
@@ -14,7 +14,7 @@ function checkForm() {
     } else if (document.forms[0].nPerson.value == "") {
         window.alert("Choisissez le Nombre de personnes !");
     } else if (document.forms[0].nSemaine.value == "") {
-        window.alert("Choisissez la Durée du séjour");
+        window.alert("Choisissez la Durée du séjour !");
     } else {
         // SI CHAMPS REMPLIS => CALCUL DU PRIX
         var msg1 = "Estimation du prix de votre location : ";
@@ -49,5 +49,29 @@ function checkForm() {
         var total = duree * (nombrePersonne * (typeSejour + option1 + option2 + option3));
         var msg = msg1 + total + msg2;
         window.alert(msg);
+    }
+}
+
+function validate() {
+
+    // VERIFICATION DU REMPLISSAGE DES CHAMPS
+    if (document.forms[0].nom.value == "") {
+        window.alert("Entrez votre nom !");
+    } else if (document.forms[0].prenom.value == "") {
+        window.alert("Entrez votre prénom !");
+    } else if (document.forms[0].mail.value == "") {
+        window.alert("Entrez votre email !");
+    } else if (document.forms[0].phone.value == "") {
+        window.alert("Entrez votre téléphone !");
+    } else if (!document.forms[0].radio[0].checked && !document.forms[0].radio[1].checked) {
+        window.alert("Sélectionnez un type de séjour !");
+    } else if (document.forms[0].nPerson.value == "") {
+        window.alert("Choisissez le Nombre de personnes !");
+    } else if (document.forms[0].nSemaine.value == "") {
+        window.alert("Choisissez la Durée du séjour !");
+    } else {
+        // SI CHAMPS REMPLIS => OK
+        var msg3 = "Réservation validée nous vous contacterons très bientôt !";
+        window.alert(msg3);
     }
 }

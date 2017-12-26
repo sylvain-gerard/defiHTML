@@ -1,5 +1,7 @@
 $(document).ready(function () {
     $('.carousel').carousel();
     $('select').material_select();
-    Materialize.updateTextFields();
+    $('.datepicker').pickadate({
+        format: 'yyyy/mm/dd',
+    });
 });

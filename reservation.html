@@ -14,7 +14,7 @@
     <!-- Mes CSS -->
     <link href="mystyle.css" type="text/css" rel="stylesheet">
     <!-- Script Validation du formulaire -->
-    <script type="text/javascript" src="js/checkForm.js"></script>
+    <script src="js/checkForm.js"></script>
 </head>
 
 <body>
@@ -66,29 +66,29 @@
                     <div class="input-field col s12 m6">
                         <i class="material-icons prefix">account_circle</i>
                         <input value="Gérard" placeholder="Placeholder" id="first_name" type="text" class="validate" name="nom">
-                        <label class="active" for="first_name">Nom</label>
+                        <label class="active" for="first_name">Nom *</label>
                     </div>
                     <div class="input-field col s12 m6">
                         <i class="material-icons prefix">account_circle</i>
                         <input value="Sylvain" id="last_name" type="text" class="validate" name="prenom">
-                        <label class="active" for="last_name">Prénom</label>
+                        <label class="active" for="last_name">Prénom *</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s12 m6">
                         <i class="material-icons prefix">email</i>
                         <input value="twentysyl@gmail.com" id="email" type="email" class="validate" name="mail">
-                        <label class="active" for="email">Email</label>
+                        <label class="active" for="email">Email *</label>
                     </div>
                     <div class="input-field col s12 m6">
                         <i class="material-icons prefix">phone</i>
                         <input value="+1 99 88 77 66 55" id="phone" type="text" class="validate" name="phone">
-                        <label class="active" for="phone">Téléphone</label>
+                        <label class="active" for="phone">Téléphone *</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col s12 m6">
-                        <p>Type de Séjour :</p>
+                        <p>Type de Séjour : *</p>
                         <p>
                             <input name="radio" type="radio" id="loisir" value="600" />
                             <label for="loisir">Séjour Loisir</label>
@@ -117,7 +117,7 @@
                 <div class="row">
                     <div class="input-field col s12 m4">
                         <select name="nPerson">
-                                        <option value = "" disabled selected>Nombre de personnes</option>
+                                        <option value = "" disabled selected>Nombre de personnes *</option>
                                         <option value="1" id="1">1 personnes</option>
                                         <option value="2" id="2">2 personnes</option>
                                         <option value="3" id="3">3 personnes</option>
@@ -128,18 +128,22 @@
                     </div>
                     <div class="input-field col s12 m4">
                         <select name="nSemaine">
-                                 <option value = "" disabled selected>Durée du séjour</option>
+                                 <option value = "" disabled selected>Durée du séjour *</option>
                                  <option value="1" id="1s">1 semaine</option>
                                  <option value="2" id="2s">2 semaines</option>
                                  <option value="3" id="3s">3 semaines</option>
                                  <option value="4" id="4s">4 semaines</option>
-
                               </select>
                     </div>
                     <div class="input-field col s12 m4">
                         <i class="material-icons prefix">date_range</i>
-                        <input id="date" type="text" class="datepicker" name="debutSejour">
-                        <label for="debutSejour">Date de début de la réservation</label>
+                        <input id="debutSejour" type="text" class="datepicker" name="debutSejour">
+                        <label for="debutSejour">Date de début *</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <p>(*) : champs obligatoires</p>
                     </div>
                 </div>
                 <div class="row">

@@ -1,3 +1,6 @@
+/*global document require*/
+/*global window require*/
+
 function estimate() {
 
     // VERIFICATION DU REMPLISSAGE DES CHAMPS
@@ -15,14 +18,16 @@ function estimate() {
         window.alert("Choisissez le Nombre de personnes !");
     } else if (document.forms[0].nSemaine.value == "") {
         window.alert("Choisissez la Durée du séjour !");
+    } else if (document.forms[0].debutSejour.value == "") {
+        window.alert("Choisissez une date de réservation !");
     } else {
         // SI CHAMPS REMPLIS => CALCUL DU PRIX
         var msg1 = "Estimation du prix de votre location : ";
         var msg2 = " euros";
 
-        for (i = 0; i < document.forms[0].radio.length; i++) {
+        for (var i = 0; i < document.forms[0].radio.length; i++) {
             if (document.forms[0].radio[i].checked) {
-                typeSejour = parseInt(document.forms[0].radio[i].value);
+                var typeSejour = parseInt(document.forms[0].radio[i].value);
             }
         }
 
@@ -69,6 +74,8 @@ function validate() {
         window.alert("Choisissez le Nombre de personnes !");
     } else if (document.forms[0].nSemaine.value == "") {
         window.alert("Choisissez la Durée du séjour !");
+    } else if (document.forms[0].debutSejour.value == "") {
+        window.alert("Choisissez une date de réservation !");
     } else {
         // SI CHAMPS REMPLIS => OK
         var msg3 = "Réservation validée nous vous contacterons très bientôt !";
